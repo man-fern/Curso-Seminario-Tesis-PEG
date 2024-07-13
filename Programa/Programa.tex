@@ -1,0 +1,312 @@
+\documentclass[12pt]{article}
+\usepackage{adjustbox}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{array}
+\usepackage{authblk}
+\usepackage{booktabs}
+\usepackage{bbm}
+\usepackage[font=small,format=plain,justification=justified]{caption}
+\usepackage{changepage}
+\usepackage{chngcntr}
+\usepackage[usenames, dvipsnames]{color}
+\usepackage{fancyhdr}
+\usepackage{float}
+\usepackage{framed}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage{lipsum}
+\usepackage{longtable}
+\usepackage{lscape}
+\usepackage{multirow} 
+\usepackage{makecell}
+\usepackage[round]{natbib}
+\usepackage{setspace}
+\usepackage[font=small,format=plain,justification=justified]{subcaption}
+\usepackage{tabu}
+\usepackage{tabularx}
+\usepackage{textcomp}
+\usepackage{url}
+\usepackage{verbatim}
+\usepackage{footnote}
+\usepackage[flushleft]{threeparttable} 
+\usepackage{tikz}
+\usepackage{titlesec}
+\usepackage{color, colortbl}
+\usepackage{xfrac}
+\usepackage{mdframed}
+%\usepackage{sectsty}
+%\sectionfont{\centering}
+\bibliographystyle{apalike}
+
+\titleformat*{\section}{\large\bfseries}
+\titleformat*{\subsection}{\normalsize\bfseries}
+\setlength{\bibsep}{4pt plus 0.3ex}
+
+\hypersetup {
+	pdftitle={Master File},
+	pdfauthor={Manuel Fern\'{a}ndez},
+	colorlinks=true,
+	citecolor=blue,
+	linkcolor=blue,
+	urlcolor=blue
+}
+
+\newenvironment{myindentpar}[1]%
+{\begin{list}{}%
+		{\setlength{\leftmargin}{#1}}%
+		\item[]%
+	}
+	{\end{list}}
+
+\setlength{\parindent}{0em}
+\setlength{\parskip}{0.5em}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\begin{minipage}{0.4\textwidth}
+    \begin{center}
+        \begin{figure}[H]
+            \includegraphics[width=0.9\textwidth]{LogoUEcon.png}
+        \end{figure}
+    \end{center}    
+\end{minipage} \hfill
+\begin{minipage}{0.6\textwidth}
+    \begin{center}
+        \textbf{SEMINARIO DE TESIS PEG} \\
+        \textbf{ECON 4600} \\
+        \textbf{MANUEL FERNÁNDEZ} \\ 
+        \href{mailto:man-fern@uniandes.edu.co}{\underline{man-fern@uniandes.edu.co}} \\
+        \textbf{2024-2}
+    \end{center}
+\end{minipage}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Horario de atención a estudiantes y correo electrónico}	
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{\underline{Clase magistral}}
+
+\textbf{Profesor:} Manuel Fernández, \href{mailto:man-fern@uniandes.edu.co}{\underline{man-fern@uniandes.edu.co}} \\
+\textbf{Horario y salón de clase:} \vspace{-0.7em}
+\begin{itemize}
+    \item Martes 11:00 am a 12:20 pm, salón AU-305. \vspace{-0.7em}
+    \item Jueves 11:00 am a 12:20 pm, salón C-210. \vspace{-0.7em}
+\end{itemize}
+\textbf{Horario y lugar de atención a estudiantes:} martes y jueves 9:30 am a 10:30 am, W902 (con \href{https://man-fern.github.io//teaching/}{\underline{cita}})
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Objetivos del seminario}
+
+El curso busca apoyar a los estudiantes en la elaboración de un artículo de investigación publicable\footnote{Se entiende por artículo publicable ``un trabajo analítico original con texto inédito, que se ocupe de un objeto o método inexplorado total o parcialmente y que sea publicable en revistas especializadas indexadas en Economía''. \href{https://economia.uniandes.edu.co/reglamentos-peg}{\underline{Reglamento de Seminario y Tesis de Grado}.}} que cumpla con los requisitos de la Facultad de Economía para la finalización de la Maestría. El Seminario proporcionará un \textbf{espacio de acompañamiento} al proceso individual de investigación. Al finalizar el semestre se espera que los estudiantes tengan un \textbf{avance significativo en su tesis (70\%+)} de manera que estén cerca de poder sustentarla.
+
+\section{Resultados de aprendizaje}
+
+\begin{itemize}
+    \item \textcolor{blue}{Definir} una pregunta de investigación relevante y viable para la tesis.
+    
+    \item \textcolor{blue}{Evaluar} críticamente la literatura académica sobre el tema de estudio.
+    
+    \item \textcolor{blue}{Formular} una propuesta metodológica robusta que permitan responder la pregunta de investigación de manera rigurosa. 
+    
+    \item \textcolor{blue}{Identificar} y \textcolor{blue}{comunicar} la \textbf{contribución} del trabajo de tesis en la literatura relevante. 
+    
+    \item \textcolor{blue}{Presentar} los resultados de la investigación de una manera concisa, persuasiva y clara.
+    
+    \item \textcolor{blue}{Generar} un documento de investigación bien escrito y consistente con los estándares de la profesión. 
+
+    \item \textcolor{blue}{Desarrollar} un estilo de presentación efectiva y un manejo eficiente del tiempo.
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Contenido}\label{SEC:Contenido}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|c|} 
+\hline
+\textbf{Semana} & \textbf{Fecha} & \textbf{Actividad} \\ 
+\hline
+ \cellcolor{GreenYellow}  1      &  \cellcolor{GreenYellow} Enero 23                    &  \cellcolor{GreenYellow} \begin{tabular}[c]{@{}l@{}}Introducción y discusión de temas aprobados\end{tabular} \\ 
+\hline
+ \cellcolor{GreenYellow} 1      &  \cellcolor{GreenYellow} Enero 25                    &  \cellcolor{GreenYellow} Estructura de un trabajo de investigación I \\ 
+\hline
+ \cellcolor{GreenYellow} 2      &   \cellcolor{GreenYellow} Enero 30                    &  \cellcolor{GreenYellow} Estructura de un trabajo de investigación II \\ 
+\hline
+  \cellcolor{GreenYellow}   2      &  \cellcolor{GreenYellow} Febrero 1                    &  \cellcolor{GreenYellow} \begin{tabular}[c]{@{}l@{}}Presentar y comentar un trabajo de investigación\end{tabular} \\ 
+\hline
+ \cellcolor{Dandelion} 3-5    & \cellcolor{Dandelion}  Febrero 6-20             & \cellcolor{Dandelion} \begin{tabular}[c]{@{}l@{}}Reuniones individuales \end{tabular} \\ 
+\hline
+\cellcolor{Cyan} 5-7    & \cellcolor{Cyan} Feb. 22 - Mar. 7          & \cellcolor{Cyan}  \begin{tabular}[c]{@{}l@{}}Presentaciones (20 min.), comentarios (5 min.) \\ y discusión en grupo (10 min.)\end{tabular}     \\ 
+\hline
+     &   Mar. 18-22                        &  \textbf{Semana de receso} \\ 
+\hline
+     &  Abr. 25-29                        &  \textbf{Semana Santa} \\ 
+\hline
+\cellcolor{Dandelion} 9-13   & \cellcolor{Dandelion} Abril 2 - 30                         & \cellcolor{Dandelion} \begin{tabular}[c]{@{}l@{}}Reuniones individuales\end{tabular} \\ 
+\hline
+\cellcolor{Cyan} 13-15    & \cellcolor{Cyan} Mayo 2 - 16                           & \cellcolor{Cyan} \begin{tabular}[c]{@{}l@{}}Presentaciones (25 min.), comentarios (5 min.) \\ y discusión en grupo (5 min.)\end{tabular}   \\
+\hline
+\cellcolor{Dandelion} 16   & \cellcolor{Dandelion} Mayo 21 - 23                        & \cellcolor{Dandelion} \begin{tabular}[c]{@{}l@{}}Reuniones individuales\end{tabular} \\ 
+\hline
+\end{tabular}
+\end{table}
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Metodología}
+
+En este seminario, los estudiantes deberán realizar \textbf{dos presentaciones orales} y entregar \textbf{dos documentos escritos}. Cada presentación contará con un \textbf{comentarista designado}, quien proporcionará observaciones críticas. El profesor determinará las fechas de las presentaciones y los comentaristas, considerando el cronograma establecido en la sección \ref{SEC:Contenido}.
+
+Es obligatorio enviar la presentación al profesor y al comentarista asignado \textbf{24 horas antes de la fecha programada}.\footnote{Se sugiere utilizar \textit{Power Point} o \textit{Beamer} para preparar las presentaciones y comentarios.} Cualquier retraso en el envío será penalizado, ya que supone una carga adicional para el comentaristas
+
+La primera versión del documento se debe entregar el \textbf{viernes 15 de marzo antes de las 6pm}. Este deberá tener entre 10 y 12 páginas\footnote{Parámetros de formato: tamaño carta, interlineado de uno y medio, márgenes de 2.5 cm, fuente Times New Roman de 12 puntos.}, incluyendo tablas y anexos. Los elementos mínimos a incluir son:
+
+\begin{mdframed}
+\begin{enumerate}
+    \item Título de la tesis.
+    \item Resumen (preliminar).
+    \item Una introducción que contenga:
+    \begin{enumerate}
+        \item Pregunta de investigación claramente definida y con una motivación explícita.
+        \item Revisión preliminar de la literatura y discusión sobre la (posible) contribución de la tesis a dicha literatura.
+    \end{enumerate}
+    \item Descripción detallada de los datos y/o del modelo teórico.
+    \item Propuesta metodológica, asegurando una correspondencia clara entre la teoría, los datos y el método de estimación.
+    \item Bibliografía (solo los artículos citados en el texto).
+\end{enumerate}
+\end{mdframed}
+
+La entrega final del documento es el \textbf{viernes 31 de mayo antes de las 6pm}. El documento debe tener máximo 25 páginas, incluyendo tablas y anexos. Debe incluir \textbf{como mínimo}:
+
+\begin{mdframed}
+\begin{enumerate}
+    \item Título de la tesis.
+    \item Resumen.
+    \item Una introducción que contenga:
+    \begin{enumerate}
+        \item Pregunta de investigación claramente definida y con una motivación explícita.
+        \item Descripción preliminar de la metodología usada para responder la pregunta de investigación.
+        \item Discusión sobre los resultados principales
+        \item Revisión a fondo de la literatura y una discusión sobre la contribución de la tesis a esa literatura.
+    \end{enumerate}
+    \item Descripción detallada de los datos y/o del modelo teórico.
+    \item Descripción detallada de la metodológica usada para responder la pregunta de investigación.
+    \item Resultados principales.
+    \item Ejercicios de robustez (si aplica).    
+    \item Conclusiones.
+    \item Bibliografía (sólo los artículos citados en el texto).
+\end{enumerate}
+\end{mdframed}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\section{Criterios de evaluación (porcentajes de cada evaluación)}
+
+El profesor del seminario asigna el 60\% de la nota y el/la asesor/a el 40\% restante. Para la nota del 60\% por parte del profesor se utilizan los siguientes porcentajes:
+
+\begin{itemize}
+    \item Presentación 1:  \hspace{1.9cm}		12\% \vspace{-0.4em}	
+    \item Comentarios 1:   \hspace{2.0cm}		3\%	\vspace{-0.4em}
+    \item Primer documento: \hspace{1.3cm}		15\% \vspace{-0.4em}
+    \item Presentación 2:  \hspace{2.0cm}		12\% \vspace{-0.4em}	 
+    \item Comentarios 2:   \hspace{2.1cm}		3\%	\vspace{-0.4em}
+    \item Documento final: \hspace{1.7cm}		15\% \vspace{-0.4em}
+\end{itemize}    
+
+La calificación asignada por el/la asesor/a sera según su criterio, teniendo en cuenta el trabajo realizado por el estudiante, la calidad y alcance de los documentos, y otros aspectos que considere conveniente.    
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{Reclamos} 
+
+De acuerdo con los Artículos 62 y 63 del \href{https://secretariageneral.uniandes.edu.co/images/documents/reglamento-maestria-web-2023.pdf}{\underline{reglamento general de estudiantes de maestría}}, el estudiante tendrá \textbf{cuatro (4) días hábiles} tras conocer las calificaciones en cuestión para presentar un reclamo de forma escrita. \textbf{El reclamo debe ser colgado en Bloque Neón en la actividad de reclamos de la evaluación correspondiente} que será establecida para tal propósito. El estudiante debe incluir un documento ordenado en el cual anexe imágenes de la evaluación y una descripción del reclamo debidamente sustentado. El enlace de Bloque Neón se cerrará automáticamente después de cuatro (4) días hábiles de hacer entrega de la evaluación calificada. Después de este tiempo \textbf{NO se recibirán más reclamos}. El \textbf{profesor magistral} responderá al reclamo en los \textbf{cinco (5) días hábiles siguientes}. Si el estudiante considera que la respuesta no concuerda con los criterios de evaluación podrá solicitar un segundo calificador al Consejo de la Facultad en los cuatro (4) días hábiles posteriores a la recepción de la decisión del profesor. 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{Inasistencia a Evaluaciones} 
+
+No hay control de asistencia. Sin embargo, \textbf{los estudiantes son responsables de enterarse sobre todo lo que se diga durante la clase, aunque esto no se encuentre en las diapositivas o en el programa del curso}.
+
+De acuerdo con el Artículo 45 del \href{https://secretariageneral.uniandes.edu.co/images/documents/reglamento-maestria-web-2023.pdf}{\underline{reglamento general de estudiantes de maestría}}, si hay inasistencias a una evaluación, \textbf{los estudiantes tendrán tres (3) días calendario para presentar una excusa válida}\footnote{Según el Art. 45, se consideran excusas validas: a) Incapacidades médicas. b) Incapacidades expedidas por la Decanatura de Estudiantes. c) Muerte del cónyuge o de parientes hasta el segundo grado de consanguinidad o de afinidad. d) Autorización para participar en eventos deportivos, expedida por la Decanatura de Estudiantes. e) Autorización para asistir a actividades académicas y culturales, expedida por la respectiva dependencia académica. f) Citación a diligencias judiciales, debidamente respaldada por el documento respectivo (véanse la Reglamentación de las incapacidades estudiantiles y el acuerdo 126 del Consejo Académico, sobre participación estudiantil en eventos académicos y deportivos).}. \textbf{Todas las excusas pasan por un proceso de verificación que tiene la facultad}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{Notas definitivas: curva y aproximaciones} 
+
+Las calificaciones definitivas de las materias serán numéricas de uno punto cinco (1.50) a cinco punto cero (5.00), en unidades, décimas y centésimas. Al obtener una nota menor a 3.00 el curso será reprobado.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{Fraude}
+
+El fraude en cualquiera de sus formas \textbf{\underline{no es admisible bajo ninguna circunstancia}}. Cualquier evidencia de fraude será remitida al comité disciplinario del Consejo de la Facultad de Economía a través del cual los estudiantes involucrados deberán proceder a remitir sus descargos. Concluido el proceso disciplinario, la evaluación o actividad académica respectiva podrá ser calificada, a discreción del profesor, hasta con nota cero (0), entendida como la consecuencia académica y sin perjuicio de la sanción disciplinaria impuesta.
+
+Para una descripción detallada de las conductas que constituyen fraude, ver el Capítulo X del \href{https://secretariageneral.uniandes.edu.co/images/documents/reglamento-maestria-web-2023.pdf}{\underline{reglamento general de estudiantes de maestría}}.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Clausulas} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{Ajustes razonables y momentos difíciles} 
+
+En este \href{https://decanaturadeestudiantes.uniandes.edu.co/ajustes-razonables-y-politica-momentos-dificiles}{enlace} se encuentra la información sobre las políticas de ajustes razonables y momentos difíciles. Para solicitar un ajuste razonable o activar la política de momentos difíciles es responsabilidad del estudiante contactar al profesor oportunamente.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{Cláusula de respeto por la diversidad}
+
+Todos debemos respetar los derechos de quienes integran esta comunidad académica. Consideramos inaceptable cualquier situación de acoso, acoso sexual, discriminación, matoneo, o amenaza. Cualquier persona que se sienta víctima de estas conductas puede denunciar su ocurrencia y buscar orientación o apoyo ante alguna de las siguientes instancias: el equipo pedagógico del curso, la Coordinación o la Dirección del programa, la Decanatura de Estudiantes, la Ombudsperson o el Comité MAAD. Si requiere más información sobre el protocolo MAAD establecido para estos casos, puede acudir a Nancy García (\href{mailto:n.garcia@uniandes.edu.co}{\underline{n.garcia@uniandes.edu.co}}.) en la Facultad de Economía. Más información sobre el protocolo MAAD: \href{https://agora.uniandes.edu.co/wp-content/uploads/2020/09/ruta-maad.pdf}{https://agora.uniandes.edu.co/wp-content/uploads/2020/09/ruta-maad.pdf}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Bibliografía.}
+
+\begin{itemize}
+    \item[{\color{blue} $\star$}] McCloskey, D. (1985). \textit{Economical writing}. Economic Inquiry, 23 (2), pp. 187-222.
+
+    \item[{\color{blue} $\star$}] Chaubey, V. (2017). \textit{The Little Book of Research Writing}. CreateSpace Independent Publishing Platform.
+
+    \item Booth, W., Colomb, G., Williams, J., Bizup, J., \& FitzGerald, W. (2015). \textit{The Craft of Research}. University of Chicago press.   
+    
+    \item Cochrane, John. (2005). \href{https://www.fma.org/assets/docs/membercontent/writing_cochrane.pdf}{Writing Tips for Ph.D. Students}. University of Chicago.    
+ 
+    \item Goldin, C. and Katz, L. (2009). \href{https://economics.harvard.edu/files/economics/files/tenruleswriting.pdf}{\textit{The Ten Most Important Rules for Writing your Job Marker Paper}.}  
+  
+    \item Nikolov (2022) \href{https://docs.iza.org/dp15057.pdf}{Writing Tips For Economics Research Papers}. IZA Working Paper No. 15057    
+  
+    \item Vallejo, H. (2003). \textit{Bases para la Elaboración de un Artículo Publicable como Tesis en Economía} (Documento CEDE 2003-16). Bogotá: Universidad de los Andes, Facultad de Economía.
+\end{itemize}
+
+\hspace{1cm}
+\begin{center}
+\textbf{Fecha de entrega del 30\% de las notas: 5 de abril} \\
+%\textbf{Último día para solicitar retiros: XXX} \\
+\textbf{Último día para subir notas finales en Banner: 7 de junio}    
+\end{center}
+
+\end{document}
+
+
